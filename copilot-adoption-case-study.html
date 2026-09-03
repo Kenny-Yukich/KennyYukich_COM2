@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Copilot adoption at KEITH Manufacturing · Kenny Yukich</title>
+<meta name="description" content="Two licenses to 77, and 88% still active after seven months. How a walking-floor trailer manufacturer actually adopted Microsoft 365 Copilot.">
+
+<meta name="theme-color" content="#E5EDF2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#091015" media="(prefers-color-scheme: dark)">
+
+<meta property="og:title" content="Copilot adoption at KEITH Manufacturing">
+<meta property="og:description" content="Two licenses to 77, and 88% still active after seven months. The playbook, the numbers, and what's slipping.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://kennyyukich.com/copilot-adoption/">
+<meta property="og:image" content="https://kennyyukich.com/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://kennyyukich.com/copilot-adoption/">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231857A8'/%3E%3Crect x='4.5' y='4.5' width='23' height='23' fill='none' stroke='%23E5EDF2' stroke-width='2'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='14' font-weight='700' fill='%23E5EDF2' text-anchor='middle'%3EKY%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<!-- root-absolute so this file works at any folder depth -->
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<main class="wrap">
+  <span class="rev">REV B</span>
+
+  <article class="study">
+    <a class="back" href="/">Back to index</a>
+
+    <h1>Copilot adoption at KEITH Manufacturing</h1>
+    <p class="standfirst">Two licenses to 77, and 88% of them still active seven months later, at a walking-floor trailer manufacturer where most of the workforce doesn't sit at a desk.</p>
+
+    <dl class="facts">
+      <dt>Role</dt><dd>Sole builder and program owner</dd>
+      <dt>Timeframe</dt><dd>20 January 2026 to present, 31 weeks and running</dd>
+      <dt>Org</dt><dd>KEITH Manufacturing Co., ~200 people, Madras, Oregon</dd>
+      <dt>Stack</dt><dd>Microsoft 365 Copilot, Copilot Studio, Power Automate, SharePoint, Excel and PowerShell reporting</dd>
+      <dt>Where it stands</dt><dd>77 licensed users · 88% active on a rolling 28 days · reported weekly</dd>
+    </dl>
+
+    <h2>The problem</h2>
+    <p>Before this role existed, KEITH had two Microsoft 365 Copilot licenses. The CEO created the AI Productivity Coordinator position, we licensed the organization properly, and I started on 20 January 2026 with a real budget line and no adoption to show for it.</p>
+    <p>That's the moment most AI programs quietly fail. Licenses land in everyone's tenant, a few people try the thing, it doesn't obviously beat the way they already work, and within a month you're paying for software nobody opens. Nothing about buying the licenses solves that. The buying is the easy part.</p>
+
+    <h2>Constraints</h2>
+    <ul>
+      <li>Most of the workforce is on the shop floor, not at a desk. Training time is measured in minutes, not hours.</li>
+      <li>No consultants, no dedicated team. One person, inside a wider IT role.</li>
+      <li>Anything requiring a new app or a new login was going to lose. Everything had to ship into Teams and M365, where people already were.</li>
+      <li>A visible spend with executive attention on it, which meant the program needed a number leadership could check without asking me.</li>
+    </ul>
+
+    <h2>What I built</h2>
+    <!-- TODO Kenny: I summarized these five from your public kit. Rewrite in your
+         own words where I've got the emphasis wrong. -->
+    <p>Five pieces, all of them public now in the adoption kit:</p>
+    <ul>
+      <li><strong>A 90-day playbook.</strong> The rollout sequence, phase by phase, so the program didn't depend on me remembering what came next.</li>
+      <li><strong>A role-specific prompt library.</strong> Prompts written against the work people at KEITH actually do, not generic examples.</li>
+      <li><strong>Training built on their own tasks.</strong> Short, practical, no AI vocabulary.</li>
+      <li><strong>A measurement loop.</strong> Covered below. This is the part most rollouts skip.</li>
+      <li><strong>A governance checklist.</strong> What IT signed off on before anything went wide.</li>
+    </ul>
+
+    <h2>How the measurement works</h2>
+    <p>I report every week. Week 31 went out in late August. The report is the program: without it, "adoption" is a feeling, and a feeling is not something you can act on before it's too late.</p>
+    <p>Four numbers, each answering a different question:</p>
+    <ul>
+      <li><strong>Rolling 28-day adoption.</strong> How many licensed users touched Copilot in the last four weeks. This is the breadth number, and the one leadership watches.</li>
+      <li><strong>A 7-day active tracker</strong> in Excel. Breadth again, but tight enough to catch a slide while it's still fixable. My own usage is excluded, because counting the program owner flatters the number.</li>
+      <li><strong>Total prompt volume.</strong> Depth across the org.</li>
+      <li><strong>Average prompts per active user.</strong> Depth per person. This is the one that tells you whether people are actually working in the tool or just opening it.</li>
+    </ul>
+    <p>There's a floor of 80% on the 28-day rate. A floor turns a soft goal into a threshold somebody has to explain, including me.</p>
+
+    <h2>Where it stands at week 31</h2>
+    <p>The rolling 28-day adoption rate is 88%, or 68 of 77 licensed users. Flat on the week and eight points clear of the floor. Seven months after rollout, not seven days.</p>
+    <p>The 7-day tracker sits at 68.4%, 52 of 76 licensed users excluding me, up from 67.1% the week before. Roughly two thirds of the company uses Copilot in any given week.</p>
+
+    <blockquote class="pull">
+      Kenny's approach focused on solving actual business problems rather than implementing technology for technology's sake.
+      <cite>Manufacturing / management consultant</cite>
+    </blockquote>
+
+    <h2>What's slipping, and what I'm doing about it</h2>
+    <p>Breadth is holding. Depth is not. Prompt volume fell to 817 from 886, and average prompts per active user dropped to 15.7, the lowest reading since spring.</p>
+    <p>That pattern matters more than the headline percentage. It means people are still logging in but leaning on the tool less, which is what the front edge of churn looks like. An 88% adoption rate with a falling prompt count is a number that looks healthy right up until it isn't.</p>
+    <p>My read is that the initial training carried people to a set of tasks they now do on autopilot, and nothing has pushed them past it. The next phase is depth rather than reach: {{ Kenny, one or two sentences on what you're actually doing about this. Second-wave training? New role-specific prompts? Agents that pull people into harder workflows? This is the strongest paragraph on the page if you fill it, so don't leave it generic. }}</p>
+
+    <h2>What I'd do differently</h2>
+    <!-- TODO Kenny: two or three honest sentences. What you over-built, what you
+         started too late, which department you'd approach differently.
+         A case study with no failures in it reads like marketing and a hiring
+         manager discounts the whole page. Don't ship without this section. -->
+    <p>{{ Fill this in. }}</p>
+
+    <h2>Take the playbook</h2>
+    <p>The full kit is public: the 90-day playbook, the prompt library, the measurement scripts, training material, and the governance checklist.</p>
+    <p>
+      <a class="btn primary" href="/copilot-adoption-kit/">Open the kit</a>
+      <a class="btn secondary" href="https://github.com/Kenny-Yukich/Copilot-Adoption-Campaign">Source on GitHub</a>
+    </p>
+  </article>
+
+  <footer class="foot">
+    <span>Madras, Oregon · Built by hand, no framework</span>
+    <span><a href="mailto:kenny@kennyyukich.com">kenny@kennyyukich.com</a></span>
+  </footer>
+</main>
+
+</body>
+</html>

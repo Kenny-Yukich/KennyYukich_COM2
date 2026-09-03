@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kenny Yukich · AI systems for manufacturing</title>
+<meta name="description" content="Kenny Yukich builds and deploys AI systems inside manufacturing operations: Microsoft Copilot adoption, Power Platform agents, and production automation.">
+
+<meta name="theme-color" content="#E5EDF2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#091015" media="(prefers-color-scheme: dark)">
+
+<meta property="og:title" content="Kenny Yukich · AI systems for manufacturing">
+<meta property="og:description" content="Copilot adoption, Power Platform agents, and production automation, deployed on a shop floor.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kennyyukich.com">
+<meta property="og:image" content="https://kennyyukich.com/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://kennyyukich.com/">
+
+<!-- Blueprint plate favicon, inline so there is no extra request -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231857A8'/%3E%3Crect x='4.5' y='4.5' width='23' height='23' fill='none' stroke='%23E5EDF2' stroke-width='2'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='14' font-weight='700' fill='%23E5EDF2' text-anchor='middle'%3EKY%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Archivo is one variable family with a width axis. The old
+     "Archivo Expanded" request was not a real family name. -->
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#work">Skip to work</a>
+
+<main class="wrap">
+  <span class="rev">REV B</span>
+
+  <div class="cols">
+
+    <!-- ================= LEFT: who ================= -->
+    <aside class="col-left">
+
+      <div class="id">
+        <img class="portrait"
+             src="img/portrait.jpg"
+             width="384" height="512" fetchpriority="high" decoding="async"
+             alt="Kenny Yukich">
+        <div>
+          <h1 class="name display">Kenny Yukich</h1>
+          <p class="where">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+              <path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/>
+              <circle cx="12" cy="10" r="2.5"/>
+            </svg>
+            Madras, Oregon
+          </p>
+          <p class="role">IT AI Productivity Coordinator at KEITH Manufacturing</p>
+        </div>
+      </div>
+
+      <div class="bio">
+        <p>I build AI systems for a manufacturing floor, and I measure them by whether people are still using them in week three.</p>
+        <p>I'm the first AI Productivity Coordinator at KEITH Manufacturing, a walking-floor trailer maker in Madras, Oregon. The role didn't exist until leadership heard about an agent I built for myself.</p>
+        <p>Before that I worked on KEITH's manufacturing floor and taught myself retrieval systems and AI tooling on nights and weekends.</p>
+        <p>In 2026 I built KEITH's Microsoft 365 Copilot program from scratch. Seven months in, 88% of licensed users are still active on a rolling 28 days, and I report it every week. I also ship agents and automations for frontline workflows, and I published the playbook.</p>
+        <p>Most AI programs fail at the last mile. The model works, the demo lands, and nobody uses the thing. That last mile is my focus.</p>
+        <p>Earlier: 300+ episodes of STEPN DAILY and a 14,000-follower audience on X.</p>
+      </div>
+
+      <div class="award">
+        <strong>2nd place, Best Microsoft Copilot Integration</strong>
+        <span>VSLive! Microsoft AI Hackathon 2026 at Microsoft HQ, solo entry</span>
+      </div>
+
+      <div class="actions">
+        <a class="btn primary" href="/copilot-adoption/">View flagship case study</a>
+        <a class="btn secondary" href="Kenny-Yukich-Resume.pdf">Download resume</a>
+      </div>
+
+      <div class="find">
+        <p class="find-label">Find me</p>
+        <div class="chips">
+          <a class="chip" href="mailto:kenny@kennyyukich.com">kenny@kennyyukich.com</a>
+          <a class="chip" href="https://www.linkedin.com/in/kenny-yukich-4092521a8/">LinkedIn</a>
+          <a class="chip" href="https://github.com/Kenny-Yukich">GitHub @Kenny-Yukich</a>
+          <a class="chip" href="https://x.com/Ktrain_USA">X @Ktrain_USA</a>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- ================= RIGHT: what ================= -->
+    <div class="col-right" id="work">
+
+      <section class="list" id="agents">
+        <h2>Agents</h2>
+
+        <details class="row">
+          <summary>
+            <span class="row-name">AP Invoice Intake Agent</span>
+            <span class="row-tag">agent · workflow</span>
+            <span class="row-year">2026</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p>Extracts vendor invoices, runs deterministic three-way matching, files clean invoices, and routes exceptions to a human in Teams.</p>
+            <a href="https://github.com/Kenny-Yukich/ap-invoice-intake-agent">View on GitHub</a>
+          </div>
+        </details>
+
+        <details class="row">
+          <summary>
+            <span class="row-name">Bunker Lookup Agent</span>
+            <span class="row-tag">agent · teams</span>
+            <span class="row-year">2026</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p>Resolves aftermarket part numbers from customer descriptions, live in Microsoft Teams for KEITH's support and drafting teams.</p>
+            <p><q>What used to take several phone calls and a lot of searching now takes a few minutes.</q> Drafter / technical writer</p>
+          </div>
+        </details>
+
+        <details class="row">
+          <summary>
+            <span class="row-name">Safety Assistant Agent</span>
+            <span class="row-tag">agent · copilot studio</span>
+            <span class="row-year">2026</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p>A privacy-safe Copilot Studio reference for grounded safety Q&amp;A and permission-aware equipment-certification lookups.</p>
+            <a href="https://github.com/Kenny-Yukich/Safety-Assistant-Agent">View on GitHub</a>
+          </div>
+        </details>
+
+        <details class="row">
+          <summary>
+            <span class="row-name">Lean Process Improvement Agent</span>
+            <span class="row-tag">agent · coach</span>
+            <span class="row-year">2026</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p>An AI coach that uses TIMWOODS and PDCA to turn frontline observations into structured, review-ready Kaizen cards.</p>
+            <a href="https://github.com/Kenny-Yukich/LEAN-Process-Improvement-Agent">View on GitHub</a>
+          </div>
+        </details>
+
+        <details class="row">
+          <summary>
+            <span class="row-name">Power Flow Build Assistant</span>
+            <span class="row-tag">agent · build guide</span>
+            <span class="row-year">2026</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p>Turns a plain-language automation need into a verified, step-by-step Power Automate build guide without inventing connector names.</p>
+            <a href="https://github.com/Kenny-Yukich/power-flow-build-assistant">View on GitHub</a>
+          </div>
+        </details>
+
+        <details class="row">
+          <summary>
+            <span class="row-name">Copilot Studio Agent Builder</span>
+            <span class="row-tag">agent · build coach</span>
+            <span class="row-year">2026</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p>A beginner-focused build coach with click-by-click guidance grounded in current Microsoft Learn documentation.</p>
+            <a href="https://github.com/Kenny-Yukich/copilot-studio-agent-builder">View on GitHub</a>
+          </div>
+        </details>
+      </section>
+
+      <section class="list" id="programs">
+        <h2>Programs &amp; automation</h2>
+
+        <details class="row">
+          <summary>
+            <span class="row-name">Copilot Adoption Campaign</span>
+            <span class="row-tag">adoption · playbook</span>
+            <span class="row-year">2026</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p>KEITH's Microsoft 365 Copilot rollout: 2 licenses to 77, with 88% of licensed users still active on a rolling 28 days seven months in. Reported weekly.</p>
+            <a href="/copilot-adoption/">Read the case study</a>
+          </div>
+        </details>
+
+        <details class="row">
+          <summary>
+            <span class="row-name">CertTracker</span>
+            <span class="row-tag">automation · m365</span>
+            <span class="row-year">2026</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p>A Microsoft 365 certification tracker with centralized records, daily compliance checks, expiration warnings, and overdue alerts.</p>
+            <a href="https://github.com/Kenny-Yukich/CertTracker">View on GitHub</a>
+          </div>
+        </details>
+
+        <details class="row">
+          <summary>
+            <span class="row-name">Plate Label Generator</span>
+            <span class="row-tag">automation · python</span>
+            <span class="row-year">2026</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p>A dependency-free Python tool that turns CSV or JSON asset records into print-ready Code 39 SVG plates and tiled sheets. Replaced a manual, one-plate-at-a-time process in the engraving department.</p>
+            <a href="https://github.com/Kenny-Yukich/Plate-Label_Generator">View on GitHub</a>
+          </div>
+        </details>
+
+        <details class="row">
+          <summary>
+            <span class="row-name">Redside</span>
+            <span class="row-tag">app · pwa</span>
+            <span class="row-year">2026</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p>An offline-first Central Oregon fishing PWA with water rankings, live conditions, beginner guides, and an on-device catch log.</p>
+            <a href="https://github.com/Kenny-Yukich/Redside">View on GitHub</a>
+          </div>
+        </details>
+
+        <details class="row">
+          <summary>
+            <span class="row-name">Cadence</span>
+            <span class="row-tag">app · pwa</span>
+            <span class="row-year">2026</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p>A private, installable cycle tracker that works offline and stores everything on the device. No account or server required.</p>
+            <a href="https://github.com/Kenny-Yukich/Cadence">View on GitHub</a>
+          </div>
+        </details>
+      </section>
+
+      <section class="list" id="recognition">
+        <h2>Recognition</h2>
+
+        <details class="row">
+          <summary>
+            <span class="row-name">2nd Place, Best Microsoft Copilot Integration</span>
+            <span class="row-tag">hackathon</span>
+            <span class="row-year">2026</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p>VSLive! Microsoft AI Hackathon 2026 at Microsoft HQ. Solo entry against team submissions.</p>
+            <a href="https://vslive.com/events/microsofthq-2026/hackathon.aspx">Event page</a>
+          </div>
+        </details>
+
+        <details class="row">
+          <summary>
+            <span class="row-name">Microsoft SMB Workflows Design Partner Program</span>
+            <span class="row-tag">program</span>
+            <span class="row-year">2026</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <!-- TODO Kenny: one line on what you actually do in this program. -->
+          <div class="row-body">
+            <p>Design partner giving Microsoft feedback on pre-release SMB workflow and agent capabilities.</p>
+          </div>
+        </details>
+
+        <details class="row">
+          <summary>
+            <span class="row-name">Microsoft Teams SMB Customer Advisory Board</span>
+            <span class="row-tag">program</span>
+            <span class="row-year">2026</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <!-- TODO Kenny: one line on what you actually do in this program. -->
+          <div class="row-body">
+            <p>Advisory board member representing a small manufacturer's view of Teams and Copilot.</p>
+          </div>
+        </details>
+
+        <details class="row">
+          <summary>
+            <span class="row-name">AI Agent Builder Associate (AB-620)</span>
+            <span class="row-tag">certification</span>
+            <span class="row-year">2026</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p>Microsoft 365 Generative AI certification track. Expected September 2026.</p>
+          </div>
+        </details>
+      </section>
+
+      <section class="list" id="experience">
+        <h2>Experience</h2>
+
+        <details class="row">
+          <summary>
+            <span class="row-name">IT AI Productivity Coordinator, KEITH Manufacturing</span>
+            <span class="row-tag">role</span>
+            <span class="row-year">2026</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p>The company's first dedicated AI role, created after the CEO heard about a personal agent I built and asked me to pitch ideas for a job that did not yet exist.</p>
+            <p>I own Copilot adoption across the licensed user base and build agents and automations with Power Platform, Copilot Studio, Python, Azure, and the Claude and OpenAI APIs. Everything ships into Microsoft Teams and M365 Copilot, where people already are.</p>
+          </div>
+        </details>
+
+        <details class="row">
+          <summary>
+            <span class="row-name">Manufacturing floor, KEITH Manufacturing</span>
+            <span class="row-tag">role</span>
+            <span class="row-year">2022</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p>Late 2022 to 2025. Worked the floor during the day and taught myself retrieval systems and AI tooling on my own time, building RAG systems with LangChain, Pinecone, and Python. Then I built an agent for myself to get up to speed in a new department.</p>
+          </div>
+        </details>
+
+        <details class="row">
+          <summary>
+            <span class="row-name">Host, STEPN DAILY</span>
+            <span class="row-tag">podcast</span>
+            <!-- TODO Kenny: confirm the start year. I guessed 2022. -->
+            <span class="row-year">2022</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p>300+ episodes covering the STEPN ($GMT) web3 ecosystem, and a 14,000-follower audience on X built alongside it. Daily shipping, a live audience, and a lot of practice explaining a technical thing to people who don't want a lecture.</p>
+            <a href="https://x.com/Ktrain_USA">@Ktrain_USA on X</a>
+          </div>
+        </details>
+
+        <details class="row no-year">
+          <summary>
+            <span class="row-name">B.S. General Science, Oregon State University</span>
+            <span class="row-tag">education</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p>Bachelor of Science in General Science, with additional pharmacy coursework.</p>
+          </div>
+        </details>
+      </section>
+
+      <section class="list" id="reports">
+        <h2>Field reports</h2>
+
+        <details class="row no-year">
+          <summary>
+            <span class="row-name">Kaizen Coach</span>
+            <span class="row-tag">subsidiary support lead</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p><q>I worked with your Kaizen Coach for hours yesterday fixing the parameters for EU MRP and I am very pleased with the final result.</q></p>
+          </div>
+        </details>
+
+        <details class="row no-year">
+          <summary>
+            <span class="row-name">Serial Plate Generator</span>
+            <span class="row-tag">engraving department lead</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <!-- TODO Kenny: the copy you sent me was cut off after "well over an h".
+               Restore the real ending from the live site. -->
+          <div class="row-body">
+            <p><q>We would type out one plate at a time, place 28 plates on one sheet, and print it twice. With the new sized plates, serial number generator, and script, we probably save well over an hour.</q></p>
+          </div>
+        </details>
+
+        <details class="row no-year">
+          <summary>
+            <span class="row-name">Safety Assistant</span>
+            <span class="row-tag">plant manager</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p><q>The Safety Assistant helped me find the information I needed without interrupting someone else. That's a big win during a busy day.</q></p>
+          </div>
+        </details>
+
+        <details class="row no-year">
+          <summary>
+            <span class="row-name">CertTracker</span>
+            <span class="row-tag">safety coordinator</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p><q>Before CertTracker, keeping track of certifications was mostly manual. Now I can find what I need almost instantly.</q></p>
+          </div>
+        </details>
+
+        <details class="row no-year">
+          <summary>
+            <span class="row-name">Copilot training</span>
+            <span class="row-tag">parts department lead</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p><q>The training focused on practical examples instead of AI buzzwords, which made it easy to apply to my job.</q></p>
+          </div>
+        </details>
+
+        <details class="row no-year">
+          <summary>
+            <span class="row-name">Adoption program</span>
+            <span class="row-tag">manufacturing / management consultant</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="row-body">
+            <p><q>Kenny's approach focused on solving actual business problems rather than implementing technology for technology's sake.</q></p>
+          </div>
+        </details>
+      </section>
+
+    </div>
+  </div>
+
+  <footer class="foot">
+    <span>Madras, Oregon · Built by hand, no framework</span>
+    <span><a href="mailto:kenny@kennyyukich.com">kenny@kennyyukich.com</a></span>
+  </footer>
+</main>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Kenny Yukich",
+  "url":"https://kennyyukich.com",
+  "email":"kenny@kennyyukich.com",
+  "jobTitle":"IT AI Productivity Coordinator",
+  "worksFor":{"@type":"Organization","name":"KEITH Manufacturing Co."},
+  "address":{"@type":"PostalAddress","addressLocality":"Madras","addressRegion":"OR","addressCountry":"US"},
+  "alumniOf":{"@type":"CollegeOrUniversity","name":"Oregon State University"},
+  "knowsAbout":["Microsoft 365 Copilot","Copilot Studio","Power Platform","Power Automate","Azure","AI agents","Manufacturing operations"],
+  "sameAs":[
+    "https://github.com/Kenny-Yukich",
+    "https://www.linkedin.com/in/kenny-yukich-4092521a8/",
+    "https://x.com/Ktrain_USA"
+  ]
+}
+</script>
+</body>
+</html>
