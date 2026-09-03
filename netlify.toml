@@ -1,0 +1,24 @@
+# kennyyukich.com — static site, no build step.
+# Lives at the repo root. Netlify reads this on every deploy.
+
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+
+# The stylesheet is shared by every page, so cache it, but not so long
+# that a design change takes a day to show up.
+[[headers]]
+  for = "/style.css"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
