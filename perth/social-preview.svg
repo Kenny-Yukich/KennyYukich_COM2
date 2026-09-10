@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="PERTH Flow Lab — an interactive lean manufacturing simulation">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fcfcf9"/>
+      <stop offset="1" stop-color="#eef1e9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#sky)"/>
+
+  <!-- brand -->
+  <g transform="translate(72 66)">
+    <rect width="46" height="46" rx="11" fill="#273f41"/>
+    <text x="10" y="34" font-family="Arial, sans-serif" font-size="34" font-weight="900" fill="#e2f0bb" letter-spacing="-2">P</text>
+    <rect x="34" y="34" width="6" height="6" fill="#b8d684"/>
+    <text x="60" y="34" font-family="'Segoe UI', Arial, sans-serif" font-size="33" font-weight="800" fill="#243b3e" letter-spacing="-1.6">PERTH</text>
+    <rect x="196" y="6" width="1" height="34" fill="#dce2db"/>
+    <text x="214" y="21" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#243b3e" letter-spacing="1.7">FLOW LAB</text>
+    <text x="214" y="38" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#4b5652">Manufacturing, made visible.</text>
+  </g>
+
+  <text x="72" y="196" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#4f5d4f" letter-spacing="1.6">ELECTRIC MOTOR ASSEMBLY  /  A LEAN EXPLORATION</text>
+
+  <text x="72" y="272" font-family="'Segoe UI', Arial, sans-serif" font-size="66" font-weight="550" fill="#243b3e" letter-spacing="-2.4">See lean in motion<tspan fill="#69976a">.</tspan></text>
+  <text x="72" y="316" font-family="'Segoe UI', Arial, sans-serif" font-size="21" fill="#4d5b52">Same product. Same people. A different way to flow.</text>
+
+  <!-- before / after floors -->
+  <g transform="translate(72 356)">
+    <!-- before -->
+    <g>
+      <text font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#b56539" letter-spacing="1.3">BEFORE LEAN · BATCH &amp; QUEUE</text>
+      <rect x="0" y="22" width="470" height="150" rx="7" fill="#fcfcf9" stroke="#e2d8c9"/>
+      <!-- one long zig-zag route threading six scattered departments -->
+      <path d="M40 130 L40 96 L130 96 L130 60 L210 60 L210 130 L300 130 L300 60 L390 60 L390 130 L440 130"
+            fill="none" stroke="#cb7e48" stroke-width="2.5" stroke-dasharray="7 5" opacity="0.85"/>
+      <g fill="#314c58">
+        <rect x="26" y="120" width="28" height="20" rx="3"/>
+        <rect x="116" y="50" width="28" height="20" rx="3"/>
+        <rect x="196" y="120" width="28" height="20" rx="3"/>
+        <rect x="286" y="50" width="28" height="20" rx="3"/>
+        <rect x="376" y="120" width="28" height="20" rx="3"/>
+        <rect x="286" y="120" width="28" height="20" rx="3"/>
+      </g>
+      <!-- batches of four waiting between operations -->
+      <g fill="#c29665">
+        <rect x="60" y="125" width="11" height="11" rx="2"/><rect x="74" y="125" width="11" height="11" rx="2"/>
+        <rect x="88" y="125" width="11" height="11" rx="2"/><rect x="102" y="125" width="11" height="11" rx="2"/>
+        <rect x="150" y="55" width="11" height="11" rx="2"/><rect x="164" y="55" width="11" height="11" rx="2"/>
+        <rect x="178" y="55" width="11" height="11" rx="2"/>
+        <rect x="230" y="125" width="11" height="11" rx="2"/><rect x="244" y="125" width="11" height="11" rx="2"/>
+        <rect x="258" y="125" width="11" height="11" rx="2"/>
+      </g>
+      <text x="0" y="196" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="500" fill="#243b3e">73.1 m travel · 12 in progress</text>
+    </g>
+
+    <!-- arrow -->
+    <g transform="translate(496 96)">
+      <path d="M0 0 L44 0 M32 -9 L44 0 L32 9" fill="none" stroke="#8a9680" stroke-width="2.5"/>
+    </g>
+
+    <!-- after -->
+    <g transform="translate(586 0)">
+      <text font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#187866" letter-spacing="1.3">AFTER LEAN · FLOW &amp; PULL</text>
+      <rect x="0" y="22" width="470" height="150" rx="7" fill="#fcfcf9" stroke="#cfdcc9"/>
+      <!-- compact U cell -->
+      <path d="M96 66 L96 128 L250 128 L374 128 L374 66 L250 66"
+            fill="none" stroke="#298e78" stroke-width="3.2" opacity="0.9"/>
+      <g fill="#314c58">
+        <rect x="82" y="56" width="28" height="20" rx="3"/>
+        <rect x="82" y="118" width="28" height="20" rx="3"/>
+        <rect x="236" y="118" width="28" height="20" rx="3"/>
+        <rect x="360" y="118" width="28" height="20" rx="3"/>
+        <rect x="360" y="56" width="28" height="20" rx="3"/>
+        <rect x="236" y="56" width="28" height="20" rx="3"/>
+      </g>
+      <!-- four production slots -->
+      <g fill="#649866">
+        <rect x="150" y="94" width="12" height="12" rx="2"/><rect x="168" y="94" width="12" height="12" rx="2"/>
+        <rect x="186" y="94" width="12" height="12" rx="2"/><rect x="204" y="94" width="12" height="12" rx="2"/>
+      </g>
+      <text x="0" y="196" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="500" fill="#243b3e">20.0 m travel · 4 in progress</text>
+    </g>
+  </g>
+
+  <!-- footer strip -->
+  <g transform="translate(0 572)">
+    <rect width="1200" height="58" fill="#f4f7ee"/>
+    <rect width="1200" height="1" fill="#e0e5d7"/>
+    <text x="72" y="36" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#455340">
+      Spot waste → predict → change one thing → run → explain
+    </text>
+    <g transform="translate(944 17)">
+      <rect width="184" height="24" rx="5" fill="#fcfcf9" stroke="#e0e5d7"/>
+      <circle cx="14" cy="12" r="3.5" fill="#80975c"/>
+      <text x="26" y="16" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="600" fill="#455340" letter-spacing="1">FICTIONAL FACTORY</text>
+    </g>
+  </g>
+</svg>
