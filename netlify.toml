@@ -4,6 +4,9 @@
 [build]
   publish = "."
 
+# /booth is password protected by netlify/edge-functions/booth-auth.ts.
+# Set BOOTH_PASSWORD under Site configuration > Environment variables.
+
 [[headers]]
   for = "/*"
   [headers.values]
