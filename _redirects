@@ -1,0 +1,3 @@
+# Keep Redside on its existing app origin so saved device data stays available.
+/redside https://kenny-yukich.github.io/Redside/ 302
+/redside/ https://kenny-yukich.github.io/Redside/ 302
